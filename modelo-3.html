@@ -163,6 +163,7 @@
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => alert("Gracias por Registrar tu Solicitud.."))
           .catch(error => console.error('Error!', error.message))
+           form.reset();
       })
     </script>
 

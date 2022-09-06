@@ -64,7 +64,6 @@ function mostrarMensajeError(claseInput, mensaje) {
         + "y Correo: " + email;
 
     window.open(url, '_blank');
-    formulario.reset();
 }
 
 
