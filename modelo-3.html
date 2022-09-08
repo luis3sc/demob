@@ -165,7 +165,11 @@
               <label for="mobile">Celular</label>
               <p class="mensajeError"></p>
             </div>
-            
+            <div class="form-input flex-colum flex-c mobile">
+            <input type="date" id="txtDate" name="Plan" required>
+            <label for="txtDate">Seleccion la fecha</label>
+            <p class="mensajeError"></p>
+        </div>
             <div class="form-termsAndConditions termsAndConditions">
               <input type="checkbox" id="termsAndConditions">
               <label for="termsAndConditions">He leído y estoy de acuerdo con los </label>
@@ -222,7 +226,23 @@
 <script src="./js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="./js/form.js"></script>
+<script>
+  $(function(){
+    var dtToday = new Date();
     
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var minDate= year + '-' + month + '-' + day;
+    
+    $('#txtDate').attr('min', minDate);
+});
+</script>
 <script src="./js/input-habilitar.js"></script>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbymybtR0avStjmo4otleY5lxm6Y5se5CIvD-tF_WhBCOJDoLkM6_l8enA5-3hHGyGxdhA/exec'

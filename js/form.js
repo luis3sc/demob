@@ -57,10 +57,12 @@ function mostrarMensajeError(claseInput, mensaje) {
     var name = document.getElementById("name").value;
     var phone = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
+    var fecha = document.getElementById("txtDate").value;
 
     var url = "https://api.whatsapp.com/send?phone=51972417095&text=Hola+necesito+información+"
         + "Mi nombre es: " + name + "%0a"
         + "Celular: " + phone + "%0a"
+        + "para la Fecha del " + fecha + "%0a"
         + "y Correo: " + email;
 
     window.open(url, '_blank');
