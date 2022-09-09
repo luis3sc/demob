@@ -274,7 +274,7 @@ main, .posrelative{
 
   }
   .a50 img{
-    width: 20%;
+    width: 22%;
 
   }
   #whastapp{
@@ -298,8 +298,19 @@ main, .posrelative{
     width: 60px;
     height: 60px;
     border-radius: 20px;
+    filter: grayscale(1);
+    /*
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.089), 0 15px 12px rgba(0, 0, 0, 0.048);
-
+*/
+  }
+  .filtrogris{
+    filter: grayscale(1);
+  }
+  .filtrogris:hover{
+    filter: grayscale(0);
+  }
+  .icon-circ:hover{
+    filter: grayscale(0);
   }
   .icon-circ img{
     width: 65%;
@@ -435,3 +446,21 @@ width: 100%;
   z-index: 1;
 }
 /** Swiper Slider **/
+
+/* iconos svg*/
+.icon-social{
+  width: 35px;
+}
+.icon-soc-p{
+  width: 20px;
+}
+.st0 {
+  fill: var(--negro);
+}
+.st1{
+  fill: var(--blanco);
+}
+.st0:hover{
+  fill:var(--gris2);
+}
+/* iconos svg*/

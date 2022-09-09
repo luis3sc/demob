@@ -1,6 +1,7 @@
 const nombre = document.getElementById("name");
 const correo = document.getElementById("email");
 const celular = document.getElementById("mobile");
+const message = document.getElementById("message");
 const terminosYcondiciones = document.getElementById("termsAndConditions");
 const formulario = document.getElementById("google-sheet");
 const listInputs = document.querySelectorAll(".form-input");
@@ -58,12 +59,13 @@ function mostrarMensajeError(claseInput, mensaje) {
     var phone = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
     var fecha = document.getElementById("txtDate").value;
+    var message = document.getElementById("message").value;
 
     var url = "https://api.whatsapp.com/send?phone=51972417095&text=Hola+necesito+información+"
         + "Mi nombre es: " + name + "%0a"
-        + "Celular: " + phone + "%0a"
-        + "para la Fecha del " + fecha + "%0a"
-        + "y Correo: " + email;
+        + ",Celular: " + phone + "%0a"
+        + "y Requiero el servicio de " + message + "%0a"
+        + "para la Fecha del " + fecha;
 
     window.open(url, '_blank');
 }
