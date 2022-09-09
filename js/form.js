@@ -61,9 +61,8 @@ function mostrarMensajeError(claseInput, mensaje) {
     var fecha = document.getElementById("txtDate").value;
     var message = document.getElementById("message").value;
 
-    var url = "https://api.whatsapp.com/send?phone=51972417095&text=Hola+necesito+información+"
+    var url = "https://api.whatsapp.com/send?phone=51972417095&text=Hola+,+acabo+de+hacer+una+reservación+"
         + "Mi nombre es: " + name + "%0a"
-        + ",Celular: " + phone + "%0a"
         + "y Requiero el servicio de " + message + "%0a"
         + "para la Fecha del " + fecha;
 
