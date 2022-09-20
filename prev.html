@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos-generales.css">
+    <link rel="stylesheet" href="./css/estilos-index.css">
+</head>
+<body class="flex-centro flex-colum gap1">
+    <section class="lista" >
+        <ul id="skins">
+            <li><a href="#" id="main">ad</a></li>
+            <li><a href="#" id="green">a</a></li>
+            <li><a href="#" id="red">sd</a></li>
+            <li><a href="#" id="cuatro">cuatro</a></li>
+          </ul>
+    </section>
+    <section class="prev">
+        <div class="iphone_bg">
+        <div class="mobile_wrap">
+            <iframe id="frame" frameborder="no" scrolling="no" width="325px" height="540px"></iframe> 
+            </div>
+        </div>
+    </section>
+    <a href="modelo-1.html" class="padding1 gris" >
+        Modelo 1
+    </a>
+    <a href="modelo-2.html" class="padding1 gris2" >
+        Modelo 2
+    </a>
+    <a href="modelo-3.html" class="padding1 gris" >
+        Modelo 3
+    </a>
+
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var $ = jQuery.noConflict(); 
+        $(document).ready(function () {
+        $("#frame").attr("src", "modelo-1.html");
+        
+        $("#main").on('click', function() {
+              $("#frame").attr("src", "modelo-1.html");
+        }); 
+        $("#green").on('click', function() { 
+              $("#frame").attr("src", "modelo-2.html");
+        }); 
+        $("#red").on('click', function() { 
+              $("#frame").attr("src", "modelo-3.html");
+        }); 
+        $("#cuatro").on('click', function() { 
+              $("#frame").attr("src", "modelo-4.html");
+        }); 
+        });
+        </script>  
+</body>
+</html>

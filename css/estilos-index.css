@@ -1,0 +1,35 @@
+ul#skins {
+    width:100%;
+    clear:both;
+    list-style:none; padding:0px; margin:0px;
+    }
+    ul#skins li{
+    width:29%;
+    float:left; display:block;
+    list-style:none; padding:0px; margin:0px 2%;
+    }
+    ul#skins li a img {
+    display:block;
+    max-width:100%;
+    }
+    .lista{
+        width: 450px;
+        height: 200px;
+    }
+    .mobile_wrap{
+        width:450px;
+        height:750px;
+        padding:100px 0 0 63px;
+        background-color: aquaz;
+        overflow: auto;
+        }
+    .prev{
+        width: 500px;
+        height: 700px;
+    }
+    .iphone_bg{
+        width:450px;
+        height:756px;
+        margin:auto;
+        background:url(../img/iphone.png) no-repeat center;
+        }
