@@ -13,8 +13,27 @@ body{
     width: 100%;
     height: 100vh;
 }
+h4{
+  font-size: 1.3em;
+}
+.brdbtm{
+  border-radius: 0 0 11em 11em;
+  overflow: hidden;
+  top: -25%;
+  position: relative;
+  transform: scale(1.5);
+}
+.img100{
+  width: 69%;
+  position: absolute;
+  /* left: 0; */
+  top: -20%;
+}
 .colblanco{
   color: var(--blanco);
+}
+.colnegro{
+  color: var(--negro);
 }
 .bblanco{
   background-color: var(--blanco);
@@ -78,9 +97,15 @@ main, .posrelative{
     position: relative;
     text-align: center;
   }
+  .header3{
+    height: 45%;
+    position: relative;
+    text-align: center;
+  }
   .portada-perfil{
     height: 80%;
     position: relative;
+    overflow: hidden;
   }
   .portada-perfil2{
     height:70%;
@@ -141,8 +166,8 @@ main, .posrelative{
     bottom: 50px;
   }
   .perfil{
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     z-index: 2;
     background-color: var(--blanco);
@@ -167,7 +192,7 @@ main, .posrelative{
   }
   .izq{
     right: 15%;
-    bottom: 10px;
+    bottom: 35px;
   }
   .at img{
     width: 50%;
@@ -211,6 +236,9 @@ main, .posrelative{
     gap: 1em;
   }
   .bd{
+    height: 25%;
+  }
+  .bdd{
     height: 40%;
   }
 .row{
@@ -218,18 +246,27 @@ main, .posrelative{
     margin: 0 auto;
     padding: 1em;
 }
+.rds{
+  height: 15%;
+}
 .padlat{
   padding: 0 1.3em;
 }
 .paddingprinc{
   padding: 2em 1em;
 }
+.padsup{
+  padding: 1.3em 0;
+}
+.padsupe{
+  padding-top: 1.3em;
+}
 .padding1{
   padding: 1em;
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     grid-gap: 1em;
   }
   .grid3 {
@@ -238,7 +275,8 @@ main, .posrelative{
     grid-gap: 1em;
   }
 .opc{
-    height: 68px;
+  padding: .4em;
+    height: 70px;
     background-color: var(--blanco);
     border-radius: 1em;
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.089), 0 15px 12px rgba(0, 0, 0, 0.048);
@@ -340,7 +378,7 @@ main, .posrelative{
     padding: 1em;
     border-radius: 20px;
     background: var(--blanco);
-    gap: 1em;
+    gap: 1.3em;
   }
 
 
@@ -395,6 +433,8 @@ main, .posrelative{
     justify-content: center;
   }
 .popup-body{
+    overflow-x: hidden;
+    overflow-y: auto;
   width: 85%;
   height: 90%;
   background-color: var(--blanco);
@@ -464,3 +504,18 @@ width: 100%;
   fill:var(--gris2);
 }
 /* iconos svg*/
+
+.mapa{
+  width: 100%;
+  padding: 1em 0;
+  height: 88%;
+}
+.imginfo{
+  width: 15%;
+}
+.wd80{
+  width: 80%;
+  margin: auto;
+  padding: 0.7em;
+  border-bottom: 1px solid;
+}

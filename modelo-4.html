@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos-form.css">
+    <link rel="stylesheet" href="./css/estilos-generales.css">
+</head>
+<body>
+    <div class="bg">
+<main class="mw-600">
+ <section class="header3">
+    <div class="portada-perfil flex-c">
+        <div class="portada brdbtm flex-centro">
+            <img class="img100" src="./img/fondo.jpg" alt="">
+        </div>
+        <div class="perfil">
+            <img src="./img/perfil.jpg" alt="">
+        </div>
+       
+        <a href="#paso" class="iconoshare abs izq at flex-centro"><img src="./img/compartir.svg" alt=""></a>
+    </div>
+    <h1>Nombre</h1>
+    <h2>Descripcion</h2>
+ </section>
+ <section class="flex-colum padsupe">
+    <div class="wd80 flex flex-a gap1">
+        <img class="imginfo" src="./img/iconos/facebook-round.svg" alt="">
+        <div>
+            <p>Whastapp</p>
+            <h4>919939009</h4>
+        </div>
+    </div>
+  
+    <div class="wd80 flex flex-a gap1">
+        <img class="imginfo" src="./img/iconos/facebook-round.svg" alt="">
+        <div>
+            <p>Celular</p>
+            <h4>919939009</h4>
+        </div>
+    </div>
+    <div class="wd80 flex flex-a gap1">
+        <img class="imginfo" src="./img/iconos/facebook-round.svg" alt="">
+        <div>
+            <p>Correo</p>
+            <h4>a@gmail.com</h4>
+        </div>
+    </div>
+    <div class="wd80 flex flex-a gap1">
+        <img class="imginfo" src="./img/iconos/facebook-round.svg" alt="">
+        <div>
+            <p>Ubicación</p>
+            <h4>Av. Localizacion 235
+                Lima - La esperanza</h4>
+        </div>
+    </div>
+ </section>
+ <section class="rds flex-centro">
+
+    <div class="opciones grid2">
+       <a href="#" class="icon-circ flex-centro"> <img loading="lazy" src="./img/iconos/facebook-round.svg" alt=""></a>
+           <a href="#" class="icon-circ flex-centro"> <img loading="lazy" src="./img/iconos/tiktok-round.svg" alt=""></a>
+           <a href="#" class="icon-circ flex-centro"><img loading="lazy" src="./img/iconos/youtube-round.svg" alt=""></a>
+           <a href="#" class="icon-circ flex-centro"><img loading="lazy" src="./img/iconos/instagram-rounda.svg" alt=""></a>
+          
+           
+           
+       </div>
+   </section>
+    <footer class="footer flex-centro">
+       <p>Obtén tu tarjeta con : <a href="#"> www.tarjetadigital.com</a></p>
+    </footer>
+ <!--PASOS-->
+ <div class="popup flex-centro" id="paso"> 
+    <div class="container-wrapper flex-centro contenedor-ad">
+    <a href="#pago" class="popup__close flex-centro">&times;</a>
+   <div class="popup-body border20 flex-centro flex-colum gap1">
+    <h3>Comparte mi Tarjeta Digital</h3>
+    <div class="flex-centro gap5 flex-colum">
+    <p>Mi QR digital</p>
+    <img loading="lazy" src="./img/QR.png" alt="">
+</div>
+<p>Compartir vía Redes Sociales</p>
+<div class="opciones grid2  flex-colum">
+   
+  <!--Whastapp compartir-->  
+	<a href="https://api.whatsapp.com/send?text=https://luis3sc.github.io/demob/modelo-3.html" target="_blank" class="icon-circ flex-centro"> <img loading="lazy" src="./img/iconos/whastapp-round.svg" alt=""></a>
+  <!--Facebook compartir-->      
+	<a href="https://www.facebook.com/sharer.php?u=https://luis3sc.github.io/demob/modelo-3.html" target="_blank" class="icon-circ flex-centro">  <img loading="lazy" src="./img/iconos/facebook-round.svg" alt=""></a>
+  <!--Telegram-->      
+	<a href="tg://msg?text=Mi Tarjeta Digital - https://luis3sc.github.io/demob/modelo-3.html" target="_blank" class="icon-circ flex-centro"><img loading="lazy" src="./img/iconos/telegram-round.svg" alt=""></a>
+  <!--Gmail-->      
+	<a href="https://mail.google.com/mail/?view=cm&to=&su=Vísitanos+en+nuestra+página+web&body=https://luis3sc.github.io/demob/modelo-3.html" target="_blank" class="icon-circ flex-centro"><img loading="lazy" src="./img/iconos/gmail-round.svg" alt=""></a>
+    </div>
+    <p>Obtén tu tarjeta con : <a href="#"> www.tarjetadigital.com</a></p>
+   </div>
+  
+   
+      </div>
+  </div>
+<!--PASO 1-->
+
+<!--RESERVA-->
+<div class="popup flex-centro" id="reservar"> 
+    <div class="container-wrapper flex-centro contenedor-ad">
+    <a href="#pago" class="popup__close flex-centro">&times;</a>
+   
+   <!-- RESERVAR FORMULARIO -->
+   <section class="popup-body border20 padding1 gap1 posrelative box" >
+    
+    <form  class="form flex-colum flex-c" method="post" name="google-sheet" id="google-sheet" autocomplete="off">
+        <p class="form-titulo">Regístrate</p>
+
+        <div class="form-input flex-colum flex-c name">
+          <input type="text" id="name" name="Nombre" required>
+          <label for="name">Nombre</label>
+          <p class="mensajeError"></p>
+        </div>
+       
+        <div class="form-input flex-colum flex-c email">  
+          <input type="email" id="email" name="Dni" required>
+          <label for="email">Correo electrónico</label>
+          <p class="mensajeError"></p>
+        </div>
+
+        <div class="form-input flex-colum flex-c mobile">
+          <input type="text" id="mobile" name="Celular" required >
+          <label for="mobile">Celular</label>
+          <p class="mensajeError"></p>
+        </div>
+        <div class="form-input flex-colum flex-c mobile">
+        <input type="date" id="txtDate" name="Plan" required>
+        <label for="txtDate">Seleccion la fecha</label>
+        <p class="mensajeError"></p>
+    </div>
+
+    <div class="form-input flex-colum flex-c mobile">
+    <select id="message" name="message" required>
+        <option value="Not Selected">Selecciona tu plan</option>
+        <option value="Corte de Cabello | s/. 18.00">Corte de Cabello | s/. 18.00</option>
+        <option value="Corte de Cabello Fade | s/. 25.00">Corte de Cabello Fade | s/. 25.00</option>
+        <option value="Corte de Barba | s/. 10.00">Corte de Barba | s/. 10.00</option>
+        <option value="Corte de Cabello para niño | s/. 10.00">Corte de Cabello para niño | s/. 10.00</option>
+    </select>
+    <label for="message">Elige el servicio</label>
+    <p class="mensajeError"></p>
+</div>
+        <div class="form-termsAndConditions termsAndConditions">
+          <input type="checkbox" id="termsAndConditions">
+          <label for="termsAndConditions">He leído y estoy de acuerdo con los </label>
+          <a href="#">Términos y Condiciones</a>
+          <p class="mensajeError"></p>
+        </div>
+        <div class="form-boton" >
+          <input id="btn" type="submit" value="Enviar" class="button" >
+        </div>
+        <p class="mensajeCorrecto"></p>
+      </form>
+      <img loading="lazy" class="abs imgform" src="https://conceptopeluqueria.com/wp-content/uploads/2020/07/www_Tommy_red_6-800x893-1.png" alt="">
+</section>
+     <!-- RESERVAR FORMULARIO -->
+      </div>
+  </div>
+<!--RESERVA-->
+
+</main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="./js/form.js"></script>
+<script>
+  $(function(){
+    var dtToday = new Date();
+    
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+        day = '0' + day.toString();
+    
+    var minDate= day + '-' + month + '-' + year;
+    
+    $('#txtDate').attr('min', minDate);
+});
+</script>
+<script src="./js/input-habilitar.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbymybtR0avStjmo4otleY5lxm6Y5se5CIvD-tF_WhBCOJDoLkM6_l8enA5-3hHGyGxdhA/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Gracias por Registrar tu Solicitud.."))
+          .catch(error => console.error('Error!', error.message))
+           form.reset();
+      })
+    </script>
+</body>
+</html>
+
+
+   
