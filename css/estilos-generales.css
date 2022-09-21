@@ -88,7 +88,7 @@ main, .posrelative{
   }
 
   .header{
-    height: 55%;
+    height: 20em;
     text-align: center;
     position: relative;
   }
@@ -191,7 +191,7 @@ main, .posrelative{
     position: absolute;
   }
   .izq{
-    right: 15%;
+    right: 2em;
     bottom: 35px;
   }
   .at img{
@@ -236,13 +236,13 @@ main, .posrelative{
     gap: 1em;
   }
   .bd{
-    height: 25%;
+    height: 14em;
   }
   .bdd{
     height: 40%;
   }
 .row{
-    width: 77%;
+    width: 22em;
     margin: 0 auto;
     padding: 1em;
 }
